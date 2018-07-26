@@ -32,10 +32,10 @@ var mydata = [
     {name: '海南',value: randomData() },{name: '台湾',value: randomData() },  
     {name: '香港',value: randomData() },{name: '澳门',value: randomData() }  
 ];
-{#console.log($("#my-data").data("value"));#}
 mydata = $("#my-data").data("value");
-mydata = [{'name': '四川', 'value': 6}, {'name': '上海', 'value': 12}, {'name': '重庆', 'value': 3}, {'name': '北京', 'value': 9}, {'name': '陕西', 'value': 3}, {'name': '广东', 'value': 12}]
-// var my_data = {{ my_data }};
+console.log(mydata);
+{#mydata = [{'name': '四川', 'value': 6}, {'name': '上海', 'value': 12}, {'name': '重庆', 'value': 3}, {'name': '北京', 'value': 9}, {'name': '陕西', 'value': 3}, {'name': '广东', 'value': 12}]#}
+{#var mydata= {{ my_data }};#}
 var optionMap = {  
     backgroundColor: '#FFFFFF',  
     title: {  
@@ -53,7 +53,7 @@ var optionMap = {
         x: 'left',  
         y: 'center',  
         splitList: [   
-            {start: 40, end: 50},
+            {start: 40, end: 80},
             {start: 30, end: 40},
             {start: 20, end: 30},
             {start: 10, end: 20},  

@@ -7,12 +7,20 @@ from Crawlers.items import CrawlersItem
 class LagouSpider(CrawlSpider):
     name = "lagouSpider"
     host = "https://www.lagou.com"
-    start_urls = ["https://www.lagou.com/jobs/list_python"]
+    cityName = input("请输入你要爬取的城市：")
+    pos = input("请输入你要爬取的职位：")
+
+    # start_urls = ["https://www.lagou.com/jobs/list_python"]
+    # start_urls = ["www.lagou.com/jobs/list_python?px=default&city=%E5%8C%97%E4%BA%AC#filterBox"]
     # start_urls = ["https://www.lagou.com/zhaopin/webqianduan/"]
+    # start_urls = ['https://www.lagou.com/jobs/list_' + pos]
+    start_urls = ['https://www.lagou.com/jobs/list_' + pos + '&city=' + cityName]
     page = 1
     header = {
-        "Referer": " https://www.lagou.com/jobs/list_python",
+        # "Referer": " https://www.lagou.com/jobs/list_" + pos,
+        'Referer': 'https://www.lagou.com/jobs/list_' + pos + '&city=' + cityName,
         # "Referer": " https://www.lagou.com/zhaopin/webqianduan/",
+        # "Referer": " www.lagou.com/jobs/list_python?px=default&city=%E5%8C%97%E4%BA%AC#filterBox",
         "Cookie": "user_trace_token=20180715134349-b7771ebf-990b-4b45-9f8e-4e49c2f59f78; _ga=GA1.2.2143932590."
                   "1531633431; LGUID=20180715134351-0d94b395-87f2-11e8-9dec-5254005c3644; showExpriedIndex=1; "
                   "showExpriedCompanyHome=1; showExpriedMyPublish=1; hasDeliver=1; index_location_city=%E5%8C%"
@@ -29,7 +37,7 @@ class LagouSpider(CrawlSpider):
         with open('lagou.html', 'w') as f:
             f.write(response.text)
         print(response.headers.getlist('Set-Cookie'))
-        formdata = {"kd": "python", "pn": '1', "first": 'true'}
+        formdata = {"kd": self.pos + self.cityName, "pn": '1', "first": 'true'}
         url = "https://www.lagou.com/jobs/positionAjax.json?needAddtionalResult=false"
         yield FormRequest(url, headers=self.header, callback=self.parse_lagou, formdata=formdata)
 
@@ -56,7 +64,7 @@ class LagouSpider(CrawlSpider):
                 yield item
             self.page += 1
             url = "https://www.lagou.com/jobs/positionAjax.json?needAddtionalResult=false"
-            formdata = {"kd": "python", "pn": str(self.page), "first": "false"}
+            formdata = {"kd": self.pos + self.cityName, "pn": str(self.page), "first": "false"}
             print('formdata: ', formdata)
             yield FormRequest(url, headers=self.header, callback=self.parse_lagou, formdata=formdata)
         else:

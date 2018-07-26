@@ -9,6 +9,6 @@
 class CrawlersPipeline(object):
     def process_item(self, item, spider):
         import json
-        with open('position1.json', 'a', encoding='utf-8') as f:
+        with open('摄影.json', 'a', encoding='utf-8') as f:
             f.write(json.dumps(dict(item), ensure_ascii=False) + '\n')
         return item
