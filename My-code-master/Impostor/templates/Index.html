@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+    <link rel="stylesheet" href="../static/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+    <script src="../static/jquery/3.2.0/jquery.min.js"></script>
+    <script src="../static/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<script>
+//记录已经输入的数据到cookie
+function record(){
+    if (document.getElementById("checkbox").checked)
+    {
+        var first_item = document.getElementById("name").value;
+        document.cookie = "name" +"=" + first_item;
+        var second_item = document.getElementById("sex").value;
+        document.cookie = first_item + "=" + second_item;
+        var third_item = document.getElementById("appearance").value;
+        document.cookie = second_item + "=" + third_item;
+    }
+}
+
+//从cookie中取出对应的数据
+function fill_in_auto(first_row_item){
+  var cookies = document.cookie.split(';');
+  var items_left = first_row_item + "=";
+
+  for (var i = 0; i < cookies.length; i++)
+  {
+    if (cookies[i].indexOf(items_left) == 1)
+    {
+      document.getElementById("sex").value = cookies[i].substring(items_left.length + 1);
+      var items_left = cookies[i].substring(items_left.length + 1) + "=";
+      break;
+    }
+  }
+  for (var i = 0; i < cookies.length; i++)
+  {
+    if (cookies[i].indexOf(items_left) == 1)
+      {
+        document.getElementById("appearance").value = cookies[i].substring(items_left.length + 1);
+        break;
+      }
+
+  }
+}
+
+// 监听函数
+function checkCookie(){
+    var input = document.getElementById("name").value;
+    // document.getElementById("test").innerHTML = document.cookie;
+    fill_in_auto(input);
+
+}
+
+</script>
+</head>
+
+<body>
+    <form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">Account name</label>
+        <div class="col-sm-3">
+            <input type="text" class="form-control" id="name"
+                   placeholder="请输入用户名" onchange = "checkCookie()">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">Keywords</label>
+        <div class="col-sm-3">
+            <input type="text" class="form-control" id="sex"
+                   placeholder="密码">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id = "checkbox"> Remember me
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" onclick = "record()">登录</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
