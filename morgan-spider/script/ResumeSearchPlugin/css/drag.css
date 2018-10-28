@@ -1,0 +1,102 @@
+* {
+    /*padding: 0;*/
+    /*margin: 0;*/
+    list-style: none;
+}
+
+.box {
+    width: 100%;
+    overflow: hidden;
+    font-family: "微软雅黑";
+}
+
+.box-3 dl {
+    margin-left: 0;
+    display: table;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    z-index:9;
+}
+
+.box-3 dl dd {
+    margin-left: 0;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    padding-left: 10px;
+    background: #06b5ff;
+    border-radius: 3px 3px 0 0;
+}
+
+.box-3 dl dd b {
+    display: block;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.box-3 dl dd b.up {
+    background: url('chrome-extension://__MSG_@@extension_id__/img/up.png') center center no-repeat;
+}
+
+.box-3 dl dd b.down {
+    background: url('chrome-extension://__MSG_@@extension_id__/img/down.png') center center no-repeat;
+}
+
+.box-3 dl ul {
+    margin-left: 0;
+    padding: 0 20px;
+    height: 146px;
+}
+
+.box-3 dl ul li {
+    height: 35px;
+    line-height: 35px;
+    border-top: 1px dashed #EDEDED;
+}
+
+.box-3 dl ul li span {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.box-3 dl ul li i {
+    font-style: normal;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 35px;
+
+}
+
+
+.box-3 dl ul li button {
+    font-style: normal;
+    margin-left: 10px;
+    padding: 6px;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-repeat: initial;
+    border-radius: 3px;
+    /*background-color: #06b5ff;*/
+}

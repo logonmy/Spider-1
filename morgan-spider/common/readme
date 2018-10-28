@@ -1,0 +1,11 @@
+本模块为common模块，主要架构如下
+|-common_settings.py
+|-server.py
+|-utils.py
+
+1、common_settings.py：主要是配置文件，但现在主要的配置已经放到了系统的/data/config/morgan/morgan_spider_common_settings.cfg文件中，所以此文件中为空，但仍需保留
+
+2、utils.py：此文件中包含公用的函数，导入此模块后，调用set_setting方法初始化必要的参数后方可使用，一般的set_setting初始化参数使用/data/config/morgan/morgan_spider_common_settings.cfg中的配置参数即可，或者可以参考各个简历采集的settings.py文件中的project_settings参数，每个函数主要功能参见代码注释
+
+3、server.py：只有在jd采集时使用，会加载相应渠道模块的process模块的process方法，从调度获取到任务之后会交给这个方法处理执行，若有新渠道的jd需要采集，只需要实现新渠道的process的process方法即可，与调度模块的调度、线程数、参数加载等可以无需自己管理，具体处理流程参见代码注释
+

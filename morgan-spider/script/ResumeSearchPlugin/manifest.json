@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "全网简历搜索插件",
+  "description": "当前支持站点：智联/前程/猎100/猎聘",
+  "version": "1.2.5",
+  "permissions": [
+    "tabs",
+    "cookies",
+    "https://*/*",
+    "http://*/*"
+  ],
+  "icons": {
+    "16": "img/Blue_cube_16px.png",
+    "128": "img/Blue_cube_128px.png"
+  },
+  "background": {
+    "scripts": [
+      "js/jquery.min.js",
+      "js/mofang.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "js/jquery.min.js",
+        "js/jquery.mloading.js",
+        "js/sweetalert2.min.js",
+        "js/drag.js"
+      ],
+      "css": [
+        "css/mofang.css",
+        "css/jquery.mloading.css",
+        "css/sweetalert2.min.css",
+        "css/drag.css"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "img/Blue_cube_19px.png",
+    "default_popup": "templates/popup.html"
+  },
+  "web_accessible_resources": [
+    "img/*"
+  ]
+}

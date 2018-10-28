@@ -1,0 +1,1 @@
+nohup python jd_zhilian_run.py stop &

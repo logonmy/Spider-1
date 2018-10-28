@@ -1,0 +1,1 @@
+nohup python jd_ganji_run.py stop &

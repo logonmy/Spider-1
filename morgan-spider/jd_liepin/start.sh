@@ -1,0 +1,1 @@
+nohup python jd_liepin_run.py start >/dev/null 2>&1 &

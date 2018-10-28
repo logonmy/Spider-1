@@ -1,0 +1,47 @@
+#mofang-wapper {
+    position: relative; /*重要！保证footer是相对于wapper位置绝对*/
+    height: auto; /* 保证页面能撑开浏览器高度时显示正常*/
+    min-height: 100% /* IE6不支持，IE6要单独配置*/
+}
+
+#mofang-footer {
+    position: fixed;
+    bottom: 0; /* 关键 */
+    left: 0; /* IE下一定要记得 */
+    height: 100px; /* footer的高度一定要是固定值*/
+    width: 100%;
+    background-color: lightgray;
+}
+
+#mofang-main-content {
+    padding-bottom: 60px; /*重要！给footer预留的空间*/
+}
+
+#mofang-notice {
+    border-top: 1px solid #000;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30px;
+    font-size: 20px;
+    color: #222222;
+}
+
+#mofang-button {
+    /*margin-top: -5px;*/
+    padding: 10px;
+    float: right;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-repeat: initial;
+    border-radius: 3px;
+    background-color: dodgerblue;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全网简历搜索插件</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="height: 300px; width: 400px;">
+
+
+<div>
+    <ul id="myTab" class="nav nav-tabs">
+
+        <li class="active"><a href="#zhilian" data-toggle="tab">智联</a></li>
+        <li><a href="#fiveone" data-toggle="tab">前程</a></li>
+        <li><a href="#lie100" data-toggle="tab">猎100</a></li>
+        <li><a href="#liepin" data-toggle="tab">猎聘</a></li>
+        <div class="text-right" style="padding:5px;">
+            <button class="btn btn-danger" id="switch">off</button>
+        </div>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="zhilian"
+             style="padding: 10px;">
+            <div><span id="config_ZHI_LIAN"></span></div>
+            <br>
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">Leader</label>
+                    <select class="form-control" id="leader_ZHI_LIAN">
+                    </select>
+                </div>
+            </form>
+
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">User</label>
+                    <select class="form-control" id="user_ZHI_LIAN">
+                        <option value='0'>-请选择你是谁-</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="text-right">
+                <span class="help-block ZHI_LIAN"></span>
+                <button class="btn btn-primary" id="save_ZHI_LIAN">save</button>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="fiveone"
+             style="padding: 10px;">
+            <div><span id="config_FIVE_ONE"></span></div>
+            <br>
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">Leader</label>
+                    <select class="form-control" id="leader_FIVE_ONE">
+                    </select>
+                </div>
+            </form>
+
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">User</label>
+                    <select class="form-control" id="user_FIVE_ONE">
+                        <option value='0'>-请选择你是谁-</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="text-right">
+                <span class="help-block FIVE_ONE"></span>
+                <button class="btn btn-primary" id="save_FIVE_ONE">save</button>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="lie100"
+             style="padding: 10px;">
+            <div><span id="config_LIE_100"></span></div>
+            <br>
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">Leader</label>
+                    <select class="form-control" id="leader_LIE_100">
+                    </select>
+                </div>
+            </form>
+
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">User</label>
+                    <select class="form-control" id="user_LIE_100">
+                        <option value='0'>-请选择你是谁-</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="text-right">
+                <span class="help-block LIE_100"></span>
+                <button class="btn btn-primary" id="save_LIE_100">save</button>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="liepin"
+             style="padding: 10px;">
+            <div><span id="config_LIE_PIN"></span></div>
+            <br>
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">Leader</label>
+                    <select class="form-control" id="leader_LIE_PIN">
+                    </select>
+                </div>
+            </form>
+
+            <form role="form">
+                <div class="form-group">
+                    <label for="name">User</label>
+                    <select class="form-control" id="user_LIE_PIN">
+                        <option value='0'>-请选择你是谁-</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="text-right">
+                <span class="help-block LIE_PIN"></span>
+                <button class="btn btn-primary" id="save_LIE_PIN">save</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/popup.js"></script>
+</body>
+
+</html>

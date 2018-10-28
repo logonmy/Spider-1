@@ -1,0 +1,1 @@
+nohup python jd_zhilian_run.py start >/dev/null 2>&1 &

@@ -1,0 +1,1 @@
+nohup python jd_chinahr_run.py start >/dev/null 2>&1 &

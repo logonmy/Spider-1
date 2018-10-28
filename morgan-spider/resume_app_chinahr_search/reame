@@ -1,0 +1,36 @@
+1 程序结构、依赖、说明
+|-common
+|  |-utils.py
+|
+|-resume_app_chinahr_search
+   |-server_chinahr_search.py
+   |-settings.py
+   |-create_task.py
+   |-util.py
+1）依赖common下的util模块，运行时需要有此模块在
+2）在main方法中初始化utils模块，并传入settings中的project_settings，程序使用参数时，会加载/data/config/morgan/morgan_spider_common_settings.cfg中的参数作为默认参数，并优先使用settings中配置的project_settings参数
+
+2 程序启动
+程序有两种启动方法：
+1）在命令行输入nohup python server_chinahr_search.py > /data/logs/morgan-spider/server_chinahr_search.out 2>&1&命令或者直接运行start.sh即可
+2）通常程序使用方法2进行启动，将程序相关参数添加到/etc/supervisor/conf.d文件夹下的morgan-jd.ini文件中，或新建ini文件，根据模板写入相关参数，并使用supervisorctl命令启动，supervisorctl的使用、配置方法在此不做赘述
+
+3 参数说明
+本程序使用的参数可在两个地方配置，/data/config/morgan/morgan_spider_common_settings.cfg文件和本目录下的settings.py文件，参数加载使用时会优先使用后一个文件的参数值
+1）/data/config/morgan/morgan_spider_common_settings.cfg作为默认参数不做赘述
+2）settings中project_settings中的参数如下：
+    PROJECT_NAME：项目名称，在/data/logs/morgan_spider文件夹下会根据此参数生成对应的日志文件，用作日志文件名称
+    CALLSYSTEMID：从调度中拿取任务时作为参数传入
+    "TASK_TYPE": 'RESUME_FETCH',
+    'RESOURCE_TYPE': 'RESUME_SEARCH',
+    SOURCE：source，字符串
+    PROXY_PATH：可默认设置成test，从代理模块拿取代理时作为参数传入
+    DOWNLOAD_THREAD_NUMBER：搜索线程数，设置后重启生效
+    DOWNLOAD_RETRY_TIME：下载重试次数
+    MNS_QUEUE：mns队列名称，如需测试，需要更改成测试队列名称
+    MYSQL_DB: 设置为spider_search，搜索结果会写入此库的resume_raw表中
+    MYSQL_DOWNLOAD_DB: 设置为spider，购买简历后会写入此库的resume_raw表中
+    RESUME_DELAY_DAYS：搜索唤醒简历的去重天数
+    SET_FORBIDDEN_URL：账号设置禁用地址
+
+    如在以后开发中设计其他全局参数，可在此设置

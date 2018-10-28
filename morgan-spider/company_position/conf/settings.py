@@ -1,0 +1,17 @@
+REDIS_HOST = 'queue.redis.mofanghr.service'
+REDIS_PORT = 6379
+REDIS_PASSWORD = 'hZ4QsgIgKM'
+REDIS_DB = 0
+#
+# REDIS_HOST = '10.0.3.6'
+# REDIS_PORT = 6379
+# REDIS_PASSWORD = 'SDOjx2HcHu'
+# REDIS_DB = 0
+
+# REDIS_HOST = 'cache.redis.mofanghr.service'
+# REDIS_HOST = '172.16.26.4'
+# REDIS_PORT = 6379
+# REDIS_PASSWORD = 'XmviMXOLc6'
+# REDIS_DB = 0
+
+COROUTINE_NUM = 5

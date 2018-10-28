@@ -1,0 +1,1 @@
+nohup python server_chinahr_search.py >/dev/null 2>&1 &

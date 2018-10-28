@@ -1,0 +1,1 @@
+nohup python jd_58_run.py stop &
