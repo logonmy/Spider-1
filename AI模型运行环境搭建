@@ -1,0 +1,276 @@
+## 安装tensorflow
+安装环境为CENTOS6.8操作系统,pip安装tensorflow后提示GLIBC版本过低。考虑到升级GLIBC有一定的风险，所以决定使用编译安装的方式安装tensorflow。基本流程是按照这篇教程： [http://www.jianshu.com/p/fdb7b54b616e/](http://www.jianshu.com/p/fdb7b54b616e/)  进行的,但是因为选择使用的版本有些不同，自己又遇到了一些坑。所以重新整理一下操作步骤。为了使安装步骤对操作系统影响最小，安装时不使用root账户以及sudo权限，而是使用了一个普通账户makeuser进行操作（少数步骤需要使用root操作）
+
+#### 安装使用到的软件版本
+
+- gcc 4.9.4
+- python 3.5.2
+- bzael 0.4.5
+- tensorflow 1.2.0
+
+### 步骤
+#### 编译安装gcc4.9.4版本
+
+参考教程: [http://blog.csdn.net/xiexievv/article/details/50620170](http://blog.csdn.net/xiexievv/article/details/50620170)
+
+GCC官方网站： https://gcc.gnu.org/ 
+可以从官网下载gcc的4.9.4版本，我这里就直接从镜像网站wget了
+
+    wget http://mirrors.concertpass.com/gcc/releases/gcc-4.9.4/gcc-4.9.4.tar.gz
+    tar xf gcc-4.9.4.tar.gz
+    cd gcc-4.9.4
+    ./contrib/download_prerequisites #这步是下载一些需要的组件，我直接下载成功了，如果不成功可以安装上面参考教程中的方法手动下载
+
+组件都下载完成后就可以configure了。因为这里编译的gcc高版本只用于编译tensorflow，并且不希望对系统原来的gcc产生影响。所以单独创建一个文件夹用于安装编译使用的环境软件。使用 --prefix 可以自定义安装路径。
+
+    cd ..
+    mkdir gcc-4.9.4-build-temp #创建编译gcc时的路径
+    mkdir software  #创建安装gcc的路径
+    cd gcc-4.9.4-build-temp/
+    ../gcc-4.9.4/configure --prefix=/home/makeuser/software --enable-checking=release --enable-languages=c,c++ --disable-multilib
+    make -j4
+    make install
+
+编译完成之后需要将编译好的gcc加入用户makeuser的环境变量中。编辑 ~/.bashrc 加入下列环境变量代码
+
+    export PATH=/home/makeuser/software/bin:$PATH
+    export CC=/home/makeuser/software/bin/gcc
+    export CXX=/home/makeuser/software/bin/g++
+    export C_INCLUDE_PATH=/home/makeuser/software/include
+    export CXX_INCLUDE_PATH=$C_INCLUDE_PATH
+    export LD_LIBRARY_PATH=/home/makeuser/software/lib:/home/makeuser/software/lib64
+    export LDFLAGS="-L/home/makeuser/software/lib -L/home/makeuser/software/lib64"
+    export CXXFLAGS="-L/home/makeuser/software/lib -L/home/makeuser/software/lib64"
+    export LD_RUN_PATH=/home/makeuser/software/lib/:/home/makeuser/software/lib64/
+
+配置好环境变量后可以使用gcc -v命令查看到gcc版本为4.9.4则已经安装正确。
+
+    $ gcc -v
+    Using built-in specs.
+    COLLECT_GCC=gcc
+    COLLECT_LTO_WRAPPER=/home/makeuser/software/libexec/gcc/x86_64-unknown-linux-gnu/4.9.4/lto-wrapper
+    Target: x86_64-unknown-linux-gnu
+    Configured with: ../gcc-4.9.4/configure --prefix=/home/makeuser/software --enable-checking=release --enable-languages=c,c++ --disable-multilib
+    Thread model: posix
+    gcc version 4.9.4 (GCC) 
+
+参考教程后面还继续安装了gdb，我这里暂时还用不到所以先不安装
+
+#### 编译安装python3.5.2
+
+    #在编译安装前有一点需要注意的是。如果需要编译的 python 支持 sqlite3 模块，需要在安装前在系统上安装 sqlite-devel 
+    yum install sqlite-devel -y
+
+参考教程：[http://www.cnblogs.com/yuechaotian/archive/2013/06/03/3115482.html](http://www.cnblogs.com/yuechaotian/archive/2013/06/03/3115482.html)
+
+python官方网站：https://www.python.org/
+
+还是直接wget下载、安装(python需要安装在 /usr/local 下，供所有用户使用，所以 python 安装时使用root用户)
+
+    wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz
+    tar xf Python-3.5.2.tgz
+    cd Python-3.5.2
+    ./configure --prefix=/usr/local/python35 --enable-shared
+    make -j4 && make install
+
+    #使用新安装的 python3.5 替换原来的 python2.6
+    ln -s /usr/local/python35/bin/python3 /usr/bin/python3.5
+    ln -s /usr/local/python35/lib/libpython3.5m.so.1.0 /usr/lib64/
+    cd /usr/bin/
+    ln -s python3.5 python3
+    mv python python.old
+    ln -s python3 python
+
+    #因为系统的yum命令依赖于 python2.6 所以需要将 /usr/bin/yum 中的解释器指向 /usr/bin/python.old
+
+安装pip并使用pip安装numpy（这步操作我不确定是不是编译tensorflow必须的，我安装的时候照着做了）
+
+    wget https://bootstrap.pypa.io/get-pip.py --no-check-certificate
+    python get-pip.py
+    ln -s /usr/local/python35/bin/pip3 /usr/bin/
+    ln -s /usr/bin/pip3 /usr/bin/pip
+    pip install numpy
+
+#### 安装bazel0.4.5
+
+安装bazel需要java1.8的环境，我的服务器上之前用rpm方式安装了jdk-8u40可以直接使用。如果服务器上没有java1.8也可以下载一个tat.gz方式的java包，解压并正确配置环境变量
+
+这里安装的bazel0.4.5与0.4.0的安装方法有些不同,参考[这里](https://blog.abysm.org/2016/06/building-tensorflow-centos-6/)
+
+之前尝试了使用0.4.0版本bazel编译，编译时出现了类似下面的[问题](https://stackoverflow.com/questions/42977100/error-in-bazel-tensorflow-installation-externalio-bazel-rules-closure-no-suc)后来尝试使用0.4.5未出现此问题
+
+    ERROR: /home/krishna/tensorflow/WORKSPACE:3:1: //external:io_bazel_rules_closure: no such attribute 'urls' in 'http_archive' rule.
+    ERROR: /home/krishna/tensorflow/WORKSPACE:3:1: //external:io_bazel_rules_closure: missing value for mandatory attribute 'url' in 'http_archive' rule.
+    ERROR: com.google.devtools.build.lib.packages.BuildFileContainsErrorsException: error loading package '': Encountered error while reading extension file 'closure/defs.bzl': no such package '@io_bazel_rules_closure//closure': error loading package 'external': Could not load //external package.
+
+首先去github上bazel的releases页面下载bazel-0.4.5-dist.zip 这个包并上传到服务器上，然后在服务器上安装
+
+    mkdir bazel
+    mv bazel-0.4.5-dist.zip bazel
+    cd bazel
+    unzip bazel-0.4.5-dist.zip
+    ./compile.sh
+
+等编译完成后把output/bazel 复制到 /home/makeuser/software/bin/ 这个目录已经在PATH中
+
+    cp output/bazel /home/makeuser/software/bin/
+
+#### 安装tensorflow1.2.0
+
+很多指引中中在这步中提示不能使用NFS文件系统，因为我的CentOS并没有挂载过NFS所以并没有验证过。
+
+从github上下载tensorflow的1.2.0版本并上传到服务器上
+
+    cd
+    unzip tensorflow-1.2.0.zip
+    cd tensorflow-1.2.0
+
+在configure前需要修改源码中的这个文件 tensorflow/tensorflow.bzl 否则编译完成后使用时会出现[问题](http://www.shizhuolin.com/2017/05/28/1407.html)
+> redhat6/centos6太老，为了顺利运行tensorflow代码，增加librt.so链接项(否则编译正常，但安装后运行时会出现 _pywrap_tensorflow_internal.so: undefined symbol: clock_gettime 等类似链接符号错误)
+
+将tensorflow.bzl中的
+
+    def tf_extension_linkopts():
+      return []  # No extension link opts
+
+修改成
+
+    def tf_extension_linkopts():
+      return ["-lrt"]  # No extension link opts
+
+
+执行下面的编译过程时我还遇到了类似这样的问题
+
+    bazel-out/host/bin/external/protobuf/protoc: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by bazel-out/host/bin/external/protobuf/protoc)
+    bazel-out/host/bin/external/protobuf/protoc: /usr/lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by bazel-out/host/bin/external/protobuf/protoc)
+    bazel-out/host/bin/external/protobuf/protoc: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.18' not found (required by bazel-out/host/bin/external/protobuf/protoc)
+
+后来使用了这个[解决办法](http://www.sunnyu.com/?p=443)
+就是将之前添加到~/.bashrc中的$LD_LIBRARY_PATH位置路径添加到/etc/ld.so.conf后面，像这样
+
+    cat /etc/ld.so.conf
+
+    include ld.so.conf.d/*.conf
+    /home/makeuser/software/lib
+    /home/makeuser/software/lib64
+
+然后执行ldconfig。执行成功后可以在/etc/ld.so.cache查看到新版gcc的库文件
+
+    strings /etc/ld.so.cache |grep software
+
+    /home/makeuser/software/lib64/libvtv.so.0
+    /home/makeuser/software/lib64/libvtv.so
+    /home/makeuser/software/lib64/libubsan.so.0
+    …………
+
+上面说的这步修改是普通用户权限无法完成的，需要使用root权限执行
+
+然后就可以configure，执行的时候注意2个地方。1是Please specify the location of python.检查后面的路径是否是你准备使用的python位置，我这里因为写了环境变量而且使用的是python2版本所以默认值就是正确的。2是Do you wish to use jemalloc as the malloc implementation?选择N，否则编译时会出现报错
+
+    ERROR: /home/makeuser/.cache/bazel/_bazel_makeuser/602695da20d6c4d186ee5dce763d82ad/external/jemalloc/BUILD:10:1: C++ compilation of rule '@jemalloc//:jemalloc' failed: gcc failed: error executing command /home/makeuser/software/bin/gcc -U_FORTIFY_SOURCE -fstack-protector -Wall -B/home/makeuser/software/bin -B/usr/bin -Wunused-but-set-parameter -Wno-free-nonheap-object -fno-omit-frame-pointer -g0 -O2 ... (remaining 35 argument(s) skipped): com.google.devtools.build.lib.shell.BadExitStatusException: Process exited with status 1.
+    external/jemalloc/src/pages.c: In function 'je_pages_huge':
+    external/jemalloc/src/pages.c:203:30: error: 'MADV_HUGEPAGE' undeclared (first use in this function)
+      return (madvise(addr, size, MADV_HUGEPAGE) != 0);
+                              ^
+    external/jemalloc/src/pages.c:203:30: note: each undeclared identifier is reported only once for each function it appears in
+    external/jemalloc/src/pages.c: In function 'je_pages_nohuge':
+    external/jemalloc/src/pages.c:217:30: error: 'MADV_NOHUGEPAGE' undeclared (first use in this function)
+      return (madvise(addr, size, MADV_NOHUGEPAGE) != 0);
+                              ^
+    external/jemalloc/src/pages.c: In function 'je_pages_huge':
+    external/jemalloc/src/pages.c:207:1: warning: control reaches end of non-void function [-Wreturn-type]
+     }
+     ^
+    external/jemalloc/src/pages.c: In function 'je_pages_nohuge':
+    external/jemalloc/src/pages.c:221:1: warning: control reaches end of non-void function [-Wreturn-type]
+     }
+     ^
+    Target //tensorflow/tools/pip_package:build_pip_package failed to build
+
+把上面的坑都填完之后执行编译应该就不会出现问题了，现在开始编译(如果运行编译的服务器上内存比较紧张，可以添加参数：  --local_resources 2048,.5,1.0   来限制编译线程，防止内存不足报错 )
+
+    bazel build -c opt //tensorflow/tools/pip_package:build_pip_package
+
+
+编译完成后开始安装
+
+    bazel-bin/tensorflow/tools/pip_package/build_pip_package /home/makeuser/tensorflow_pkg  #生成whl包
+    pip install /home/makeuser/tensorflow_pkg/tensorflow-1.2.0-cp27-cp27m-linux_x86_64.whl  #安装
+
+安装完成后可以测试一下
+
+	$ python
+	Python 3.5.2 (default, Dec  5 2017, 11:26:25) 
+	[GCC 4.9.4] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> import tensorflow as tf
+	>>> hello = tf.constant('Hello,Tensorflow~')
+	>>> sess = tf.Session()
+	2017-12-05 15:25:55.673343: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+	2017-12-05 15:25:55.673435: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+	2017-12-05 15:25:55.673454: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+	2017-12-05 15:25:55.673470: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+	2017-12-05 15:25:55.673485: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+	>>> print(sess.run(hello))
+	b'Hello,Tensorflow~'
+	>>> a = tf.constant(10)
+	>>> b = tf.constant(32)
+	>>> print(sess.run(a + b))
+	42
+	>>> 
+
+---
+## 安装其他需要的环境
+以上步骤已经成功的在 python 中安装了 tensorflow 。但后来又有需求安装一个 c++ 使用的动态链接库 libtensorflow_cc.so 。安装方法如下：
+
+    cd ~/tensorflow-1.2.0
+    bazel build //tensorflow:libtensorflow_cc.so
+    #下面是为C++所需编译准备环境
+	#我在安装的时候把这个 .so 文件复制到/usr/local/lib下就可以使用了
+    cp bazel-bin/tensorflow/libtensorflow_cc.so /usr/local/lib/
+    #将需要的文件放入 /usr/local/include/tf 下，运行时就可以找到这些文件
+    mkdir /usr/local/include/tf
+    cp -r bazel-genfiles/ /usr/local/include/tf/
+    cp -r tensorflow/ /usr/local/include/tf/
+    cp -r third_party/ /usr/local/include/tf/
+    
+然后把 /usr/local/lib 加入/etc/ld.so.conf ，再运行ldconfig
+
+eigen 3.3.4 安装
+
+    #从官网下载 eigen 3.3.4 并上传至服务器
+    tar xf eigen-eigen-5a0156e40feb.tar.bz2
+    #eigen3的通过yum安装的方式并不能正常使用。需要通过下载eigen3.3.4然后解压到/usr/local/include/下并重命名为eigen3才能正常使用
+    mv eigen-eigen-5a0156e40feb /usr/local/include/eigen3
+
+protobuf 3.2.0 编译安装
+
+    # 环境准备
+    yum install -y autoconf automake libtool
+    # 参考 https://github.com/google/protobuf/pull/2599/commits/141a1dac6ca572056c6a8b989e41f6ee213f8445
+    # http://blog.csdn.net/u012839187/article/details/48025225
+    # http://blog.csdn.net/cristianojason/article/details/68489595
+    # http://blog.csdn.net/xiexievv/article/details/47396725
+    
+    tar xf protobuf-cpp-3.2.0.tar.gz
+    cd protobuf-3.2.0/
+    
+    ./autogen.sh
+    ./configure --prefix=/usr
+    vim src/google/protobuf/metadata.h
+    make
+    make check
+    make install
+
+安装完成后可以使用protoc --version 查看 protobuf 是否安装正确，如果出现动态链接库找不到的情况可以尝试运行 ldconfig 命令重新加载动态连接库
+
+除此之外服务器上还需要安装线性回归的的库 pulp ，直接使用pip安装就可以
+```bash
+pip install pulp
+```
+
+安装语音识别需要的库
+
+```bash
+pip install jieba
+```
