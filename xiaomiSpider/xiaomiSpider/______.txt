@@ -1,0 +1,13 @@
+项目环境：python3.6+scrapy1.5+lxml4.2.1+jsonpath
+开发工具：pyCharm
+
+运行爬虫：scrapy crawl miSpider
+
+
+
+未完成字段：满意度
+问题说明：在页面中满意度是一个异步加载的css样式，所以未取到标签
+
+
+环境配置文件requirement.txt文件是我之前开发时的环境，并非只有爬虫环境，希望您见谅
+数据保存成了json格式  

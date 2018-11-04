@@ -1,0 +1,1002 @@
+2018-08-31 03:58:37 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: xiaomiSpider)
+2018-08-31 03:58:37 [scrapy.utils.log] INFO: Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0
+2018-08-31 03:58:37 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'xiaomiSpider', 'LOG_FILE': 'xiaomiSpider.log', 'NEWSPIDER_MODULE': 'xiaomiSpider.spiders', 'SPIDER_MODULES': ['xiaomiSpider.spiders']}
+2018-08-31 03:58:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-31 03:58:38 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-31 03:58:38 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-31 03:58:38 [scrapy.middleware] INFO: Enabled item pipelines:
+['xiaomiSpider.pipelines.XiaomispiderPipeline']
+2018-08-31 03:58:38 [scrapy.core.engine] INFO: Spider opened
+2018-08-31 03:58:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-31 03:58:38 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-08-31 03:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1> (referer: https://koubei.baidu.com/s/e4dcdf6e1fe4ce0a93c56369b72c059a?src=searchexp)
+2018-08-31 03:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=726928&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=540246&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1175331&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1736473&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=9962921&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=880452&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=314606&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=726928&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京新浪互联信息服务有限公司', 'memid': 726928, 'memname': '青岛装修家居_新浪装修家居网'}
+2018-08-31 03:58:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=540246&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市彬讯科技有限公司', 'memid': 540246, 'memname': '土巴兔北京装修网'}
+2018-08-31 03:58:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1175331&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '郑州必火科技有限公司', 'memid': 1175331, 'memname': '比一比装修网'}
+2018-08-31 03:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=226838&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1736473&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京世纪融商信息技术有限公司', 'memid': 1736473, 'memname': '百家网装修装饰平台'}
+2018-08-31 03:58:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=9962921&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海齐家网信息科技股份有限公司', 'memid': 9962921, 'memname': '装修百科'}
+2018-08-31 03:58:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=880452&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '浙江土拨鼠网络科技有限公司', 'memid': 880452, 'memname': '土拨鼠装修保'}
+2018-08-31 03:58:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=314606&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市彬讯科技有限公司', 'memid': 314606, 'memname': '土巴兔装修论坛'}
+2018-08-31 03:58:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=226838&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '浙江土拨鼠网络科技有限公司',
+ 'content': {'可恶土拨鼠推广冒充装修快车网官网，欺骗消费者进入': '1.土拨鼠 http://www.tobosu.com/ , '
+                                         '我在手机上用手机在百度搜索 装修快车网、装修快车 '
+                                         '这个网站，跳出广告是土拨鼠的恶意截取冒用装修快车的品牌词（图一）（图二），点进去是土拨鼠 '
+                                         '的页面（图二）。\n'
+                                         '2，值得注意，为了达到欺骗用户流量的目的，这个土拨鼠为了逃避责任 '
+                                         '经常变换着时间投放广告，一般晚上八点后才投放，见证据隐...'},
+ 'memid': 226838,
+ 'memname': '土拨鼠装修网'}
+2018-08-31 03:58:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=33006&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=27173&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=33006&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市臻盛创投网络发展有限公司',
+ 'content': {'冒充保障网官网，欺骗消费者': '1.装修快装网www.66zhuang.com，百度搜索保障网跳出广告保障网装修，点进去是快装网。\n'
+                              '2.快装网公司使用他人品牌词做推广\n'
+                              '3.处理删掉保障网公司品牌词组',
+             '反映疑似施工方装修公司材料造成的的问题，请平台帮协调': '虽然有点风波 但是的确是我多虑了，反映后不久就有专人和我联系 '
+                                           '专业机构上门测量空气问题，还出具了相当权威的报告。',
+             '投诉装修快车网，收集装修公司负面信息，诱导充值广告费。': '装修快车网（http://www.66zhuang.com/）是一个为装修公司提供服务的网站，主要盈利模式是装修公司广告费，每个月推荐一些需要装修的客户，但是旗下还开设了315平台，我不知道营业运营315平台是否合法，该公司旗下315平台收集，采编了装修公司很多负面信息，我公司当然也不例外，没有办法，我去找到他们业务员，他们业务员说合作2...',
+             '揭露装修快车网的骗局': '经过双方友好协商，达成一致，大家和解，感谢百度口碑平台，为社会大众提供一个申诉的空间！',
+             '是我太挑剔？还是施工有问题？希望能够协助我处理': '还好，经过反馈客服也很快就联系上我了，虽然说整个装修一点点不顺利，不过那么大的工程还是可以理解的，整体的体验还是可以的，后续如果有有朋友要装修我也会推荐。可能真的是我太挑剔了。',
+             '装修报价网站，装修网站装修快车网，欺骗商家，事实曝光': '事情：装修公司网站平台，装修平台装修快车网，66zhuang.com，七品消费者，威逼消费者\n'
+                                           '目的：为了骗取装修商家的钱，和他们合作，给派送客户信息\n'
+                                           '做法：首先假装业主，给装修公司的品牌词做虚假骗子广告，以便影响众多装修公司的名誉，然后再联系装修公司，说给他们交钱合作，以后保证不出现负面，要是不合作，就不管，并且还背后在顶排名!\n'
+                                           '性质：破...'},
+ 'memid': 33006,
+ 'memname': '装修快车网'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=27173&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京一起网科技股份有限公司',
+ 'content': {'一个没有责任心的平台': '尽管反应了2、3次、尽管中间发生过一些不愉快，但问题最终得到解决，感谢最后那个负责人的人。',
+             '不良商家，盗名引流': '一起装修网。很差劲的一个网站。盗用北京华誉嘉禾装饰工程有限公司名称及注册商标，已经投诉过一次，真是一个十分龌蹉的网站平台，龌蹉的企业，龌蹉的领导。这样不良商家就应该早些破产倒闭',
+             '冒充 武汉金尚装饰 官方网站进行商业宣传': '“一起装修网”用网站内页 冒充“武汉金尚装饰”官方网站 进行商业宣传 '
+                                     '利用别人公司的品牌强行做优化排名，行为太可耻！！！',
+             '冒用瑞祥装饰企业品牌词，恶意竞争！': '百度搜索“瑞祥装饰，”一起装修网通过竞价模式借助“瑞祥装饰”品牌词链接到自己网站。进行恶意竞争，是一家盗用瑞祥装饰企业品牌，恶意竞争的行为！并且在没有瑞祥装饰授权的情况下，将瑞祥装饰公司的企业介绍及其他分公司的品牌词以也页面列表的形式展现，并且页面为没有任何价值的垃圾信息，为的就是用瑞祥装饰的品牌词做seo排名，其实，受到侵权的不仅仅是瑞...',
+             '冒用肇庆家装e站品牌涉嫌商业诈骗': '利用别人公司的品牌强行做优化排名，严重损害了家装e站肇庆线下体验中心的名声以及品牌。右边的才是家装e站肇庆体验中心的官方网站http://www.0758jze.com/，请各位网友注意。',
+             '强行用人家的关键词做优化引流！': '利用别人公司的品牌强行做优化排名，严重损害了自己名声以及品牌。这种行为太可耻了！好多品牌关键词都被利用引流！',
+             '注册商标遭受恶意侵权': '1、盗用我公司名称及商标进行非法引流推广\n'
+                           '2、对我公司名称及商标形成严重的侵权行为\n'
+                           '3、对我公司在业内的口碑造成严重的影响\n'
+                           '4、马上停止这样的侵权行为并删除快照',
+             '涉嫌商业欺诈': '该网站利用其他公司的“百百软装中心”的品牌名称，误导消费者。',
+             '虚假宣传，宣传一折，实际是假的': '虚假宣传，宣传一折，实际是假的，搅乱市场。\n'
+                                '点开链接里边根本没有华日家具，却买这个关键词可耻可恨！！！'},
+ 'memid': 27173,
+ 'memname': '一起装修网'}
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2257168&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=631175&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=577686&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=604510&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=627528&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=35769271&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=103899&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2297737&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=38224933&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=275300&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2257168&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京四合茗苑建筑设计有限公司', 'memid': 2257168, 'memname': '四合茗苑中式装修设计机构'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=631175&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '天津爱装网科技有限公司', 'memid': 631175, 'memname': '合肥最好的装修网【合肥爱装网】'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=577686&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '天津爱装网科技有限公司', 'memid': 577686, 'memname': '大连最好的装修网【大连爱装网】'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=604510&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '天津爱装网科技有限公司', 'memid': 604510, 'memname': '佛山装修报价'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=627528&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '天津爱装网科技有限公司', 'memid': 627528, 'memname': '哈尔滨最好的装修网【哈尔滨'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=35769271&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京惠装网络信息科技有限公司', 'memid': 35769271, 'memname': '北京惠装装修'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=103899&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京古韵轩装饰设计有限公司', 'memid': 103899, 'memname': '古韵轩中式装修网'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2297737&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京惠装网络信息科技有限公司', 'memid': 2297737, 'memname': '我要装修网'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=38224933&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '西安积木家信息科技有限公司', 'memid': 38224933, 'memname': '蘑菇装饰装修设计'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=275300&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '河南车前草计算机科技有限公司',
+ 'content': {'侵权我公司商标': '假冒我公司（北京欧亿优品家居有限公司）官网，误导欺诈消费者，给我公司造成名誉及经济上的重大损失。\n'
+                        '附件：商标注册证，营业执照，网络截图'},
+ 'memid': 275300,
+ 'memname': '装修第一网'}
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=28817&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=36060418&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=29769159&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26944134&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3573365&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=25461684&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=22841160&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=275518&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=28817&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '成都艾逸信网络技术有限公司', 'memid': 28817, 'memname': '艾逸装修网'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=36060418&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市橙多多科技有限公司', 'memid': 36060418, 'memname': '橙多多装修网'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=29769159&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京启鹏飞扬网络科技发展有限公司', 'memid': 29769159, 'memname': '91装修网'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26944134&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '陕西塞纳春天装饰装修工程有限公司', 'memid': 26944134, 'memname': '塞纳春天整装'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3573365&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '宿迁企动力网络科技有限公司', 'memid': 3573365, 'memname': '比三家装修网'}
+2018-08-31 03:58:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=25461684&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海悦装网络科技有限公司', 'memid': 25461684, 'memname': 'E装修网'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=22841160&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '绵阳三千装饰装修工程有限公司', 'memid': 22841160, 'memname': '绵阳三千装饰装修工程有限公司'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=275518&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '济南六度网络技术有限公司',
+ 'content': {'装修之家推广冒充装修快车网官网，欺骗消费者进入': '1.装修之家zxzhijia.com , 我在百度搜索 '
+                                        '装修快车网、装修快车 这个网站，跳出广告是装修之家，点进去是装修之家。\n'
+                                        '2.装修之家网公司在使用他人品牌词做推广、 '
+                                        '在百度搜索上非法用装修快车网的品牌词推广截词，混浊视听，以达到欺骗消费者入网站，获取客户的目的。\n'
+                                        '3，网查装修快车已经注册了商标，应该受到法律保护以及网民应该公正的找到...'},
+ 'memid': 275518,
+ 'memname': '装修之家'}
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=25460202&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2501714&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=25460202&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '郑州中万软件科技有限公司',
+ 'content': {'拇指帮无良商家，私吞会员费用，协商不成就恶意威胁！': '拇指帮欺骗商家，欺骗合作伙伴，之前我方发过一次口碑曝光贴不光没有解决问题，还受到对方不知名的领导威胁，说要把我方的个人信息（身份证）发布到网络上去，因为之前他们一直不予协商，找各种借口和理由推脱，先说是我在口碑曝光贴的投诉影响他们了什么的各种原因，因为口碑曝光贴被多方转载了，这是我方不可控的范围，结果拇指帮就开始耍无赖，非要求我们去把别人...',
+             '揭露拇指帮装修网的骗局': '还算满意，希望商家遵守自己的承诺，避免后期在有任何矛盾产生，尽快把和解协议签字，在规定时间内把钱退给我',
+             '签了合同之后就完全不安合同内容实行！': '本公司是杭州成勤环保科技有限公司与郑州中万软件科技有限公司（拇指帮装修网）在2017年11月16日签订合同，费用是15000元，参将双十一活动减2111元，赠送35个订单。本公司是做室内空气净化、除甲醛的，签合同之前，明确说过，派送订单要有明确需求的客户订单。合作开始之后，客服派送的订单全部是装修订单，与本公司业务不符合，与合同内容不符合...'},
+ 'memid': 25460202,
+ 'memname': '拇指帮装修网'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2501714&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '郑州多点科技有限公司',
+ 'content': {'合同欺骗，条约不履行！': '省多多装修网就是个骗子公司！我在他们家签了半年合作协议，说承诺让我在他们平台签到50万的单子。结果合作期结束了总共就发了几个客户号码给我，其他没有任何服务。就这几个客户号码还都是无效的都是假的信息！'},
+ 'memid': 2501714,
+ 'memname': '省多多装修网'}
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2258651&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=27325965&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=195621&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2865754&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2865648&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3668940&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=848004&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3414459&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1221417&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=32016357&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2258651&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海灵朵信息科技有限公司', 'memid': 2258651, 'memname': '窝牛装修'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=27325965&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '宝鸡爱蜂巢电子商务有限公司', 'memid': 27325965, 'memname': '装修e站'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=195621&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海春亭装饰设计工程有限公司', 'memid': 195621, 'memname': '上海别墅装修'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2865754&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳过家家科技有限公司', 'memid': 2865754, 'memname': '过家家装修网'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2865648&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京亦风科技有限公司', 'memid': 2865648, 'memname': '3空间找装修'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3668940&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳前海熊猫无毒装修网络科技有限公司', 'memid': 3668940, 'memname': '熊猫无毒装修网'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=848004&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '沈阳林凤伟业装饰装修工程有限公司', 'memid': 848004, 'memname': '沈阳林凤伟业装饰装修工程有限公司'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3414459&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京家菊就电子商务有限公司', 'memid': 3414459, 'memname': '新浪装修抢工长'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1221417&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '武汉欧氏达科技有限公司', 'memid': 1221417, 'memname': '参谋家装修网'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=32016357&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '武汉璇瑞智佳装饰装修设计工程有限公司',
+ 'memid': 32016357,
+ 'memname': '武汉璇瑞智佳装饰装修设计工程有限公司'}
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-08-31 03:58:40 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://koubei.baidu.com/s/gettruthlistajax?memid=27325965&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3480429&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26061751&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26708400&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=29774097&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=29908530&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=32693702&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26061399&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=27718410&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-08-31 03:58:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2604784&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3480429&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '常州市谷歌网络科技有限公司', 'memid': 3480429, 'memname': '常州装修网'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26061751&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '天津叮当网科技有限公司', 'memid': 26061751, 'memname': '叮当装修'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26708400&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '苏州抢网单信息科技有限公司', 'memid': 26708400, 'memname': '抢单装修网'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=29774097&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '南京酷装装饰工程有限公司', 'memid': 29774097, 'memname': '酷装装修'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=29908530&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '武汉师傅之家装饰服务有限公司', 'memid': 29908530, 'memname': '装修帮工长'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=32693702&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '厦门柒陆伍实业有限公司', 'memid': 32693702, 'memname': '765装修网'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26061399&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '贵州楚风建设工程有限公司', 'memid': 26061399, 'memname': '楚风装修网'}
+2018-08-31 03:58:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=27718410&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '常州虎跃网络科技有限公司', 'memid': 27718410, 'memname': '喜乐虎装修网'}
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2604784&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '苏州雅信装饰工程有限公司', 'memid': 2604784, 'memname': '上海装修'}
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=167774&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2961379&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=196646&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26917163&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=34235082&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26005047&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=36884914&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2416472&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2111792&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=34703719&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=167774&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京美智达装饰装修有限公司', 'memid': 167774, 'memname': '北京美智达装饰装修有限公司'}
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2961379&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '沈阳海天装饰装修有限公司', 'memid': 2961379, 'memname': '沈阳海天装饰装修有限公司'}
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=196646&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '沈阳瑞家装饰装修工程有限公司', 'memid': 196646, 'memname': '沈阳瑞家装饰装修工程有限公司'}
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26917163&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '石家庄优装网络科技有限公司', 'memid': 26917163, 'memname': '绿房子装修网'}
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=34235082&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '江西快易装装修服务有限公司', 'memid': 34235082, 'memname': '江西快易装装修服务有限公司'}
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26005047&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '合肥日鸿装修设计工程有限公司', 'memid': 26005047, 'memname': '合肥日鸿装修设计工程有限公司'}
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=36884914&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '咸阳塞纳春天装饰装修工程有限公司',
+ 'memid': 36884914,
+ 'memname': '咸阳塞纳春天装饰装修工程有限公司'}
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2416472&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '苏州汇装网络信息技术有限公司', 'memid': 2416472, 'memname': '装修我家'}
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2111792&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '桐庐兴润网络工程经营部', 'memid': 2111792, 'memname': '桐庐装饰网'}
+2018-08-31 03:58:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=34703719&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '杭州爱装修网络科技有限公司', 'memid': 34703719, 'memname': '杭州爱装修网络科技有限公司'}
+2018-08-31 03:58:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=7> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-08-31 03:58:41 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-08-31 03:58:41 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 42761,
+ 'downloader/request_count': 66,
+ 'downloader/request_method_count/GET': 66,
+ 'downloader/response_bytes': 122246,
+ 'downloader/response_count': 66,
+ 'downloader/response_status_count/200': 66,
+ 'dupefilter/filtered': 11,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 8, 30, 19, 58, 41, 851690),
+ 'item_scraped_count': 59,
+ 'log_count/DEBUG': 127,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 7,
+ 'response_received_count': 66,
+ 'scheduler/dequeued': 66,
+ 'scheduler/dequeued/memory': 66,
+ 'scheduler/enqueued': 66,
+ 'scheduler/enqueued/memory': 66,
+ 'start_time': datetime.datetime(2018, 8, 30, 19, 58, 38, 94252)}
+2018-08-31 03:58:41 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-09-03 14:31:08 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: xiaomiSpider)
+2018-09-03 14:31:08 [scrapy.utils.log] INFO: Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0
+2018-09-03 14:31:08 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'xiaomiSpider', 'LOG_FILE': 'xiaomiSpider.log', 'NEWSPIDER_MODULE': 'xiaomiSpider.spiders', 'SPIDER_MODULES': ['xiaomiSpider.spiders']}
+2018-09-03 14:31:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-03 14:31:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-03 14:31:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-03 14:31:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['xiaomiSpider.pipelines.XiaomispiderPipeline']
+2018-09-03 14:31:09 [scrapy.core.engine] INFO: Spider opened
+2018-09-03 14:31:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-03 14:31:10 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-03 14:31:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1> (referer: https://koubei.baidu.com/s/e4dcdf6e1fe4ce0a93c56369b72c059a?src=searchexp)
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=540246&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1736473&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=314606&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=9962921&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1175331&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=726928&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=275300&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=540246&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市彬讯科技有限公司', 'memid': 540246, 'memname': '土巴兔北京装修网'}
+2018-09-03 14:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1736473&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京世纪融商信息技术有限公司', 'memid': 1736473, 'memname': '百家网装修装饰平台'}
+2018-09-03 14:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=314606&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市彬讯科技有限公司', 'memid': 314606, 'memname': '土巴兔装修论坛'}
+2018-09-03 14:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=9962921&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海齐家网信息科技股份有限公司', 'memid': 9962921, 'memname': '装修百科'}
+2018-09-03 14:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1175331&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '郑州必火科技有限公司', 'memid': 1175331, 'memname': '比一比装修网'}
+2018-09-03 14:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=726928&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京新浪互联信息服务有限公司', 'memid': 726928, 'memname': '青岛装修家居_新浪装修家居网'}
+2018-09-03 14:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=275300&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '河南车前草计算机科技有限公司',
+ 'content': {'侵权我公司商标': '假冒我公司（北京欧亿优品家居有限公司）官网，误导欺诈消费者，给我公司造成名誉及经济上的重大损失。\n'
+                        '附件：商标注册证，营业执照，网络截图'},
+ 'memid': 275300,
+ 'memname': '装修第一网'}
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=226838&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=33006&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=226838&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '浙江土拨鼠网络科技有限公司',
+ 'content': {'可恶土拨鼠推广冒充装修快车网官网，欺骗消费者进入': '1.土拨鼠 http://www.tobosu.com/ , '
+                                         '我在手机上用手机在百度搜索 装修快车网、装修快车 '
+                                         '这个网站，跳出广告是土拨鼠的恶意截取冒用装修快车的品牌词（图一）（图二），点进去是土拨鼠 '
+                                         '的页面（图二）。\n'
+                                         '2，值得注意，为了达到欺骗用户流量的目的，这个土拨鼠为了逃避责任 '
+                                         '经常变换着时间投放广告，一般晚上八点后才投放，见证据隐...'},
+ 'memid': 226838,
+ 'memname': '土拨鼠装修网'}
+2018-09-03 14:31:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=33006&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市臻盛创投网络发展有限公司',
+ 'content': {'冒充保障网官网，欺骗消费者': '1.装修快装网www.66zhuang.com，百度搜索保障网跳出广告保障网装修，点进去是快装网。\n'
+                              '2.快装网公司使用他人品牌词做推广\n'
+                              '3.处理删掉保障网公司品牌词组',
+             '反映疑似施工方装修公司材料造成的的问题，请平台帮协调': '虽然有点风波 但是的确是我多虑了，反映后不久就有专人和我联系 '
+                                           '专业机构上门测量空气问题，还出具了相当权威的报告。',
+             '投诉装修快车网，收集装修公司负面信息，诱导充值广告费。': '装修快车网（http://www.66zhuang.com/）是一个为装修公司提供服务的网站，主要盈利模式是装修公司广告费，每个月推荐一些需要装修的客户，但是旗下还开设了315平台，我不知道营业运营315平台是否合法，该公司旗下315平台收集，采编了装修公司很多负面信息，我公司当然也不例外，没有办法，我去找到他们业务员，他们业务员说合作2...',
+             '揭露装修快车网的骗局': '经过双方友好协商，达成一致，大家和解，感谢百度口碑平台，为社会大众提供一个申诉的空间！',
+             '是我太挑剔？还是施工有问题？希望能够协助我处理': '还好，经过反馈客服也很快就联系上我了，虽然说整个装修一点点不顺利，不过那么大的工程还是可以理解的，整体的体验还是可以的，后续如果有有朋友要装修我也会推荐。可能真的是我太挑剔了。',
+             '装修报价网站，装修网站装修快车网，欺骗商家，事实曝光': '事情：装修公司网站平台，装修平台装修快车网，66zhuang.com，七品消费者，威逼消费者\n'
+                                           '目的：为了骗取装修商家的钱，和他们合作，给派送客户信息\n'
+                                           '做法：首先假装业主，给装修公司的品牌词做虚假骗子广告，以便影响众多装修公司的名誉，然后再联系装修公司，说给他们交钱合作，以后保证不出现负面，要是不合作，就不管，并且还背后在顶排名!\n'
+                                           '性质：破...'},
+ 'memid': 33006,
+ 'memname': '装修快车网'}
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=27173&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=27173&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京一起网科技股份有限公司',
+ 'content': {'一个没有责任心的平台': '尽管反应了2、3次、尽管中间发生过一些不愉快，但问题最终得到解决，感谢最后那个负责人的人。',
+             '不良商家，盗名引流': '一起装修网。很差劲的一个网站。盗用北京华誉嘉禾装饰工程有限公司名称及注册商标，已经投诉过一次，真是一个十分龌蹉的网站平台，龌蹉的企业，龌蹉的领导。这样不良商家就应该早些破产倒闭',
+             '冒充 武汉金尚装饰 官方网站进行商业宣传': '“一起装修网”用网站内页 冒充“武汉金尚装饰”官方网站 进行商业宣传 '
+                                     '利用别人公司的品牌强行做优化排名，行为太可耻！！！',
+             '冒用瑞祥装饰企业品牌词，恶意竞争！': '百度搜索“瑞祥装饰，”一起装修网通过竞价模式借助“瑞祥装饰”品牌词链接到自己网站。进行恶意竞争，是一家盗用瑞祥装饰企业品牌，恶意竞争的行为！并且在没有瑞祥装饰授权的情况下，将瑞祥装饰公司的企业介绍及其他分公司的品牌词以也页面列表的形式展现，并且页面为没有任何价值的垃圾信息，为的就是用瑞祥装饰的品牌词做seo排名，其实，受到侵权的不仅仅是瑞...',
+             '冒用肇庆家装e站品牌涉嫌商业诈骗': '利用别人公司的品牌强行做优化排名，严重损害了家装e站肇庆线下体验中心的名声以及品牌。右边的才是家装e站肇庆体验中心的官方网站http://www.0758jze.com/，请各位网友注意。',
+             '强行用人家的关键词做优化引流！': '利用别人公司的品牌强行做优化排名，严重损害了自己名声以及品牌。这种行为太可耻了！好多品牌关键词都被利用引流！',
+             '注册商标遭受恶意侵权': '1、盗用我公司名称及商标进行非法引流推广\n'
+                           '2、对我公司名称及商标形成严重的侵权行为\n'
+                           '3、对我公司在业内的口碑造成严重的影响\n'
+                           '4、马上停止这样的侵权行为并删除快照',
+             '涉嫌商业欺诈': '该网站利用其他公司的“百百软装中心”的品牌名称，误导消费者。',
+             '虚假宣传，宣传一折，实际是假的': '虚假宣传，宣传一折，实际是假的，搅乱市场。\n'
+                                '点开链接里边根本没有华日家具，却买这个关键词可耻可恨！！！'},
+ 'memid': 27173,
+ 'memname': '一起装修网'}
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2257168&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=880452&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=36060418&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=25461684&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=22841160&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=29769159&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2257168&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京四合茗苑建筑设计有限公司', 'memid': 2257168, 'memname': '四合茗苑中式装修设计机构'}
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=880452&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '浙江土拨鼠网络科技有限公司', 'memid': 880452, 'memname': '土拨鼠装修保'}
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=275518&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2297737&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=36060418&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市橙多多科技有限公司', 'memid': 36060418, 'memname': '橙多多装修网'}
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=25461684&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海悦装网络科技有限公司', 'memid': 25461684, 'memname': 'E装修网'}
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=22841160&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '绵阳三千装饰装修工程有限公司', 'memid': 22841160, 'memname': '绵阳三千装饰装修工程有限公司'}
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=29769159&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京启鹏飞扬网络科技发展有限公司', 'memid': 29769159, 'memname': '91装修网'}
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=28817&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=25460202&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=275518&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '济南六度网络技术有限公司',
+ 'content': {'装修之家推广冒充装修快车网官网，欺骗消费者进入': '1.装修之家zxzhijia.com , 我在百度搜索 '
+                                        '装修快车网、装修快车 这个网站，跳出广告是装修之家，点进去是装修之家。\n'
+                                        '2.装修之家网公司在使用他人品牌词做推广、 '
+                                        '在百度搜索上非法用装修快车网的品牌词推广截词，混浊视听，以达到欺骗消费者入网站，获取客户的目的。\n'
+                                        '3，网查装修快车已经注册了商标，应该受到法律保护以及网民应该公正的找到...'},
+ 'memid': 275518,
+ 'memname': '装修之家'}
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2297737&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京惠装网络信息科技有限公司', 'memid': 2297737, 'memname': '我要装修网'}
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=28817&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '成都艾逸信网络技术有限公司', 'memid': 28817, 'memname': '艾逸装修网'}
+2018-09-03 14:31:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=25460202&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '郑州中万软件科技有限公司',
+ 'content': {'拇指帮无良商家，私吞会员费用，协商不成就恶意威胁！': '拇指帮欺骗商家，欺骗合作伙伴，之前我方发过一次口碑曝光贴不光没有解决问题，还受到对方不知名的领导威胁，说要把我方的个人信息（身份证）发布到网络上去，因为之前他们一直不予协商，找各种借口和理由推脱，先说是我在口碑曝光贴的投诉影响他们了什么的各种原因，因为口碑曝光贴被多方转载了，这是我方不可控的范围，结果拇指帮就开始耍无赖，非要求我们去把别人...',
+             '揭露拇指帮装修网的骗局': '还算满意，希望商家遵守自己的承诺，避免后期在有任何矛盾产生，尽快把和解协议签字，在规定时间内把钱退给我',
+             '签了合同之后就完全不安合同内容实行！': '本公司是杭州成勤环保科技有限公司与郑州中万软件科技有限公司（拇指帮装修网）在2017年11月16日签订合同，费用是15000元，参将双十一活动减2111元，赠送35个订单。本公司是做室内空气净化、除甲醛的，签合同之前，明确说过，派送订单要有明确需求的客户订单。合作开始之后，客服派送的订单全部是装修订单，与本公司业务不符合，与合同内容不符合...'},
+ 'memid': 25460202,
+ 'memname': '拇指帮装修网'}
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2865648&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2865754&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2258651&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3573365&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1221417&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26061751&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2865648&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京亦风科技有限公司', 'memid': 2865648, 'memname': '3空间找装修'}
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=195621&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2865754&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳过家家科技有限公司', 'memid': 2865754, 'memname': '过家家装修网'}
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2501714&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2258651&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海灵朵信息科技有限公司', 'memid': 2258651, 'memname': '窝牛装修'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3573365&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '宿迁企动力网络科技有限公司', 'memid': 3573365, 'memname': '比三家装修网'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1221417&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '武汉欧氏达科技有限公司', 'memid': 1221417, 'memname': '参谋家装修网'}
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=103899&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26061751&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '天津叮当网科技有限公司', 'memid': 26061751, 'memname': '叮当装修'}
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2416472&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=195621&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海春亭装饰设计工程有限公司', 'memid': 195621, 'memname': '上海别墅装修'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2501714&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '郑州多点科技有限公司',
+ 'content': {'合同欺骗，条约不履行！': '省多多装修网就是个骗子公司！我在他们家签了半年合作协议，说承诺让我在他们平台签到50万的单子。结果合作期结束了总共就发了几个客户号码给我，其他没有任何服务。就这几个客户号码还都是无效的都是假的信息！'},
+ 'memid': 2501714,
+ 'memname': '省多多装修网'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=103899&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京古韵轩装饰设计有限公司', 'memid': 103899, 'memname': '古韵轩中式装修网'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2416472&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '苏州汇装网络信息技术有限公司', 'memid': 2416472, 'memname': '装修我家'}
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=275230&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1183444&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3668940&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3712310&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=251027&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=27325965&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=27718410&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3666818&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=275230&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '四川弘讯电子商务有限公司', 'memid': 275230, 'memname': '装修一二三网'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1183444&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '铜陵市人人网络科技有限公司', 'memid': 1183444, 'memname': '人人装修网'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3668940&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳前海熊猫无毒装修网络科技有限公司', 'memid': 3668940, 'memname': '熊猫无毒装修网'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3712310&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '好家(厦门)网络科技有限公司', 'memid': 3712310, 'memname': '好家装修网'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=251027&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '厦门美家帮科技股份有限公司', 'memid': 251027, 'memname': 'X团装修网'}
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=848004&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=27325965&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '宝鸡爱蜂巢电子商务有限公司', 'memid': 27325965, 'memname': '装修e站'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=27718410&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '常州虎跃网络科技有限公司', 'memid': 27718410, 'memname': '喜乐虎装修网'}
+2018-09-03 14:31:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3666818&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '易居(北京)电子商务股份有限公司', 'memid': 3666818, 'memname': '苏皖e装修'}
+2018-09-03 14:31:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2111792&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=848004&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '沈阳林凤伟业装饰装修工程有限公司', 'memid': 848004, 'memname': '沈阳林凤伟业装饰装修工程有限公司'}
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2111792&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '桐庐兴润网络工程经营部', 'memid': 2111792, 'memname': '桐庐装饰网'}
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=32016357&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26061399&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=34703719&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=32693702&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3670284&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2604784&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26005047&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=32016357&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '武汉璇瑞智佳装饰装修设计工程有限公司',
+ 'memid': 32016357,
+ 'memname': '武汉璇瑞智佳装饰装修设计工程有限公司'}
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2961379&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=29908530&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26061399&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '贵州楚风建设工程有限公司', 'memid': 26061399, 'memname': '楚风装修网'}
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=34703719&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '杭州爱装修网络科技有限公司', 'memid': 34703719, 'memname': '杭州爱装修网络科技有限公司'}
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=32693702&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '厦门柒陆伍实业有限公司', 'memid': 32693702, 'memname': '765装修网'}
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3670284&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳一修网络科技有限公司', 'memid': 3670284, 'memname': 'e修装修'}
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2604784&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '苏州雅信装饰工程有限公司', 'memid': 2604784, 'memname': '上海装修'}
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26005047&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '合肥日鸿装修设计工程有限公司', 'memid': 26005047, 'memname': '合肥日鸿装修设计工程有限公司'}
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2961379&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '沈阳海天装饰装修有限公司', 'memid': 2961379, 'memname': '沈阳海天装饰装修有限公司'}
+2018-09-03 14:31:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=29908530&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '武汉师傅之家装饰服务有限公司', 'memid': 29908530, 'memname': '装修帮工长'}
+2018-09-03 14:31:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2258787&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2258787&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '合肥日鸿装修设计工程有限公司',
+ 'content': {'合肥日鸿装修公司是豆腐渣工程': '我家装修找日鸿公司，真是倒了大霉，合同延期了一个多月是小事，刚装修好的房子，墙根50公分就出现大面积的长了白霉，紧接着白霉变成黑霉，墙体脱落。让他们公司来维修，电话里说好修过了，等你人去的时候，要么根本没修，要么只是在墙脱了的地方，涂一些腻子粉，就这样折腾我们几次（因为我们离得远，去一趟非常不容易，拖家带口的）最后来找他们修，他们连电话也...'},
+ 'memid': 2258787,
+ 'memname': '日鸿装修'}
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=36884998&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=25932712&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=33512&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=196646&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=39305435&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3359360&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3480429&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=36884998&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '西安兔宝贝信息科技有限公司', 'memid': 36884998, 'memname': '兔宝贝装修网'}
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=25932712&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '广州市尤度装修设计有限公司', 'memid': 25932712, 'memname': '广州市尤度装修设计有限公司'}
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=33512&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '邢台市木枫信息技术服务有限公司', 'memid': 33512, 'memname': '77装修网'}
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=196646&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '沈阳瑞家装饰装修工程有限公司', 'memid': 196646, 'memname': '沈阳瑞家装饰装修工程有限公司'}
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=39305435&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '西安美家帮建筑设计有限公司', 'memid': 39305435, 'memname': '美家帮互联网装修'}
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3359360&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '厦门蜜蜂巢科技有限公司', 'memid': 3359360, 'memname': '蜜蜂巢装修网'}
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3480429&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '常州市谷歌网络科技有限公司', 'memid': 3480429, 'memname': '常州装修网'}
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=188595&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=36732165&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1232814&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=188595&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京三木合力建筑装饰工程有限公司', 'memid': 188595, 'memname': '声学装修'}
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=36732165&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '广州市合抱木信息科技有限责任公司', 'memid': 36732165, 'memname': '合抱木互联网装修平台'}
+2018-09-03 14:31:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=7> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 14:31:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1232814&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '四川弘讯电子商务有限公司',
+ 'content': {'和他们做了一个业务，上当受骗了，求助！！': '给他们做cs.zx123.cn/ '
+                                     '长沙装修这一个词的优化，一个月付款500，做到了百度首页不给钱！有他们工作人员qq： '
+                                     '2460300871号，打电话咨询了，答应的很好不做人事，至今都没有付款！'},
+ 'memid': 1232814,
+ 'memname': '装修123网'}
+2018-09-03 14:31:15 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3480429&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-09-03 14:31:15 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-09-03 14:31:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 43409,
+ 'downloader/request_count': 67,
+ 'downloader/request_method_count/GET': 67,
+ 'downloader/response_bytes': 126597,
+ 'downloader/response_count': 67,
+ 'downloader/response_status_count/200': 67,
+ 'dupefilter/filtered': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 3, 6, 31, 15, 823687),
+ 'item_scraped_count': 60,
+ 'log_count/DEBUG': 129,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 7,
+ 'response_received_count': 67,
+ 'scheduler/dequeued': 67,
+ 'scheduler/dequeued/memory': 67,
+ 'scheduler/enqueued': 67,
+ 'scheduler/enqueued/memory': 67,
+ 'start_time': datetime.datetime(2018, 9, 3, 6, 31, 9, 998339)}
+2018-09-03 14:31:15 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-09-03 18:15:25 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: xiaomiSpider)
+2018-09-03 18:15:25 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-09-03 18:15:25 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'xiaomiSpider', 'LOG_FILE': 'xiaomiSpider.log', 'NEWSPIDER_MODULE': 'xiaomiSpider.spiders', 'SPIDER_MODULES': ['xiaomiSpider.spiders']}
+2018-09-03 18:15:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-03 18:15:26 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-09-03 18:15:26 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\core\downloader\__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "C:\Users\tayla\Envs\spider\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\downloadermiddlewares\retry.py", line 20, in <module>
+    from twisted.web.client import ResponseFailed
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\twisted\web\client.py", line 41, in <module>
+    from twisted.internet.endpoints import HostnameEndpoint, wrapClientTLS
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\twisted\internet\endpoints.py", line 41, in <module>
+    from twisted.internet.stdio import StandardIO, PipeAddress
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\twisted\internet\stdio.py", line 30, in <module>
+    from twisted.internet import _win32stdio
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\twisted\internet\_win32stdio.py", line 9, in <module>
+    import win32api
+ModuleNotFoundError: No module named 'win32api'
+2018-09-03 18:15:40 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: xiaomiSpider)
+2018-09-03 18:15:40 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-09-03 18:15:40 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'xiaomiSpider', 'LOG_FILE': 'xiaomiSpider.log', 'NEWSPIDER_MODULE': 'xiaomiSpider.spiders', 'SPIDER_MODULES': ['xiaomiSpider.spiders']}
+2018-09-03 18:15:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-03 18:15:40 [twisted] CRITICAL: Unhandled error in Deferred:
+2018-09-03 18:15:40 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\crawler.py", line 80, in crawl
+    self.engine = self._create_engine()
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\crawler.py", line 105, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\core\engine.py", line 69, in __init__
+    self.downloader = downloader_cls(crawler)
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\core\downloader\__init__.py", line 88, in __init__
+    self.middleware = DownloaderMiddlewareManager.from_crawler(crawler)
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\middleware.py", line 58, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\utils\misc.py", line 44, in load_object
+    mod = import_module(module)
+  File "C:\Users\tayla\Envs\spider\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\scrapy\downloadermiddlewares\retry.py", line 20, in <module>
+    from twisted.web.client import ResponseFailed
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\twisted\web\client.py", line 41, in <module>
+    from twisted.internet.endpoints import HostnameEndpoint, wrapClientTLS
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\twisted\internet\endpoints.py", line 41, in <module>
+    from twisted.internet.stdio import StandardIO, PipeAddress
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\twisted\internet\stdio.py", line 30, in <module>
+    from twisted.internet import _win32stdio
+  File "C:\Users\tayla\Envs\spider\lib\site-packages\twisted\internet\_win32stdio.py", line 9, in <module>
+    import win32api
+ModuleNotFoundError: No module named 'win32api'
+2018-09-03 18:23:54 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: xiaomiSpider)
+2018-09-03 18:23:54 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 18:11:49) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0i  14 Aug 2018), cryptography 2.3.1, Platform Windows-10-10.0.17134-SP0
+2018-09-03 18:23:54 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'xiaomiSpider', 'LOG_FILE': 'xiaomiSpider.log', 'NEWSPIDER_MODULE': 'xiaomiSpider.spiders', 'SPIDER_MODULES': ['xiaomiSpider.spiders']}
+2018-09-03 18:23:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-09-03 18:23:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-09-03 18:23:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-09-03 18:23:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['xiaomiSpider.pipelines.XiaomispiderPipeline']
+2018-09-03 18:23:54 [scrapy.core.engine] INFO: Spider opened
+2018-09-03 18:23:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-03 18:23:54 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-03 18:23:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1> (referer: https://koubei.baidu.com/s/e4dcdf6e1fe4ce0a93c56369b72c059a?src=searchexp)
+2018-09-03 18:23:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=275300&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1736473&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=275300&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '河南车前草计算机科技有限公司',
+ 'content': {'侵权我公司商标': '假冒我公司（北京欧亿优品家居有限公司）官网，误导欺诈消费者，给我公司造成名誉及经济上的重大损失。\n'
+                        '附件：商标注册证，营业执照，网络截图'},
+ 'memid': 275300,
+ 'memname': '装修第一网'}
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=726928&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=226838&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=9962921&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1736473&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京世纪融商信息技术有限公司', 'memid': 1736473, 'memname': '百家网装修装饰平台'}
+2018-09-03 18:23:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=726928&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京新浪互联信息服务有限公司', 'memid': 726928, 'memname': '青岛装修家居_新浪装修家居网'}
+2018-09-03 18:23:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=226838&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '浙江土拨鼠网络科技有限公司',
+ 'content': {'可恶土拨鼠推广冒充装修快车网官网，欺骗消费者进入': '1.土拨鼠 http://www.tobosu.com/ , '
+                                         '我在手机上用手机在百度搜索 装修快车网、装修快车 '
+                                         '这个网站，跳出广告是土拨鼠的恶意截取冒用装修快车的品牌词（图一）（图二），点进去是土拨鼠 '
+                                         '的页面（图二）。\n'
+                                         '2，值得注意，为了达到欺骗用户流量的目的，这个土拨鼠为了逃避责任 '
+                                         '经常变换着时间投放广告，一般晚上八点后才投放，见证据隐...'},
+ 'memid': 226838,
+ 'memname': '土拨鼠装修网'}
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=314606&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=9962921&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海齐家网信息科技股份有限公司', 'memid': 9962921, 'memname': '装修百科'}
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1175331&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=540246&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=33006&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=314606&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市彬讯科技有限公司', 'memid': 314606, 'memname': '土巴兔装修论坛'}
+2018-09-03 18:23:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1175331&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '郑州必火科技有限公司', 'memid': 1175331, 'memname': '比一比装修网'}
+2018-09-03 18:23:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=540246&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市彬讯科技有限公司', 'memid': 540246, 'memname': '土巴兔北京装修网'}
+2018-09-03 18:23:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=33006&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市臻盛创投网络发展有限公司',
+ 'content': {'冒充保障网官网，欺骗消费者': '1.装修快装网www.66zhuang.com，百度搜索保障网跳出广告保障网装修，点进去是快装网。\n'
+                              '2.快装网公司使用他人品牌词做推广\n'
+                              '3.处理删掉保障网公司品牌词组',
+             '反映疑似施工方装修公司材料造成的的问题，请平台帮协调': '虽然有点风波 但是的确是我多虑了，反映后不久就有专人和我联系 '
+                                           '专业机构上门测量空气问题，还出具了相当权威的报告。',
+             '投诉装修快车网，收集装修公司负面信息，诱导充值广告费。': '装修快车网（http://www.66zhuang.com/）是一个为装修公司提供服务的网站，主要盈利模式是装修公司广告费，每个月推荐一些需要装修的客户，但是旗下还开设了315平台，我不知道营业运营315平台是否合法，该公司旗下315平台收集，采编了装修公司很多负面信息，我公司当然也不例外，没有办法，我去找到他们业务员，他们业务员说合作2...',
+             '揭露装修快车网的骗局': '经过双方友好协商，达成一致，大家和解，感谢百度口碑平台，为社会大众提供一个申诉的空间！',
+             '是我太挑剔？还是施工有问题？希望能够协助我处理': '还好，经过反馈客服也很快就联系上我了，虽然说整个装修一点点不顺利，不过那么大的工程还是可以理解的，整体的体验还是可以的，后续如果有有朋友要装修我也会推荐。可能真的是我太挑剔了。',
+             '装修报价网站，装修网站装修快车网，欺骗商家，事实曝光': '事情：装修公司网站平台，装修平台装修快车网，66zhuang.com，七品消费者，威逼消费者\n'
+                                           '目的：为了骗取装修商家的钱，和他们合作，给派送客户信息\n'
+                                           '做法：首先假装业主，给装修公司的品牌词做虚假骗子广告，以便影响众多装修公司的名誉，然后再联系装修公司，说给他们交钱合作，以后保证不出现负面，要是不合作，就不管，并且还背后在顶排名!\n'
+                                           '性质：破...'},
+ 'memid': 33006,
+ 'memname': '装修快车网'}
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=27173&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=1)
+2018-09-03 18:23:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=27173&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京一起网科技股份有限公司',
+ 'content': {'一个没有责任心的平台': '尽管反应了2、3次、尽管中间发生过一些不愉快，但问题最终得到解决，感谢最后那个负责人的人。',
+             '不良商家，盗名引流': '一起装修网。很差劲的一个网站。盗用北京华誉嘉禾装饰工程有限公司名称及注册商标，已经投诉过一次，真是一个十分龌蹉的网站平台，龌蹉的企业，龌蹉的领导。这样不良商家就应该早些破产倒闭',
+             '冒充 武汉金尚装饰 官方网站进行商业宣传': '“一起装修网”用网站内页 冒充“武汉金尚装饰”官方网站 进行商业宣传 '
+                                     '利用别人公司的品牌强行做优化排名，行为太可耻！！！',
+             '冒用瑞祥装饰企业品牌词，恶意竞争！': '百度搜索“瑞祥装饰，”一起装修网通过竞价模式借助“瑞祥装饰”品牌词链接到自己网站。进行恶意竞争，是一家盗用瑞祥装饰企业品牌，恶意竞争的行为！并且在没有瑞祥装饰授权的情况下，将瑞祥装饰公司的企业介绍及其他分公司的品牌词以也页面列表的形式展现，并且页面为没有任何价值的垃圾信息，为的就是用瑞祥装饰的品牌词做seo排名，其实，受到侵权的不仅仅是瑞...',
+             '冒用肇庆家装e站品牌涉嫌商业诈骗': '利用别人公司的品牌强行做优化排名，严重损害了家装e站肇庆线下体验中心的名声以及品牌。右边的才是家装e站肇庆体验中心的官方网站http://www.0758jze.com/，请各位网友注意。',
+             '强行用人家的关键词做优化引流！': '利用别人公司的品牌强行做优化排名，严重损害了自己名声以及品牌。这种行为太可耻了！好多品牌关键词都被利用引流！',
+             '注册商标遭受恶意侵权': '1、盗用我公司名称及商标进行非法引流推广\n'
+                           '2、对我公司名称及商标形成严重的侵权行为\n'
+                           '3、对我公司在业内的口碑造成严重的影响\n'
+                           '4、马上停止这样的侵权行为并删除快照',
+             '涉嫌商业欺诈': '该网站利用其他公司的“百百软装中心”的品牌名称，误导消费者。',
+             '虚假宣传，宣传一折，实际是假的': '虚假宣传，宣传一折，实际是假的，搅乱市场。\n'
+                                '点开链接里边根本没有华日家具，却买这个关键词可耻可恨！！！'},
+ 'memid': 27173,
+ 'memname': '一起装修网'}
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2257168&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=28817&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=36060418&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=22841160&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2297737&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=25461684&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=275518&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=880452&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2257168&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京四合茗苑建筑设计有限公司', 'memid': 2257168, 'memname': '四合茗苑中式装修设计机构'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=28817&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '成都艾逸信网络技术有限公司', 'memid': 28817, 'memname': '艾逸装修网'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=36060418&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳市橙多多科技有限公司', 'memid': 36060418, 'memname': '橙多多装修网'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=22841160&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '绵阳三千装饰装修工程有限公司', 'memid': 22841160, 'memname': '绵阳三千装饰装修工程有限公司'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2297737&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京惠装网络信息科技有限公司', 'memid': 2297737, 'memname': '我要装修网'}
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=29769159&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=25461684&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海悦装网络科技有限公司', 'memid': 25461684, 'memname': 'E装修网'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=275518&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '济南六度网络技术有限公司',
+ 'content': {'装修之家推广冒充装修快车网官网，欺骗消费者进入': '1.装修之家zxzhijia.com , 我在百度搜索 '
+                                        '装修快车网、装修快车 这个网站，跳出广告是装修之家，点进去是装修之家。\n'
+                                        '2.装修之家网公司在使用他人品牌词做推广、 '
+                                        '在百度搜索上非法用装修快车网的品牌词推广截词，混浊视听，以达到欺骗消费者入网站，获取客户的目的。\n'
+                                        '3，网查装修快车已经注册了商标，应该受到法律保护以及网民应该公正的找到...'},
+ 'memid': 275518,
+ 'memname': '装修之家'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=880452&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '浙江土拨鼠网络科技有限公司', 'memid': 880452, 'memname': '土拨鼠装修保'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=29769159&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京启鹏飞扬网络科技发展有限公司', 'memid': 29769159, 'memname': '91装修网'}
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=25460202&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=25460202&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '郑州中万软件科技有限公司',
+ 'content': {'拇指帮无良商家，私吞会员费用，协商不成就恶意威胁！': '拇指帮欺骗商家，欺骗合作伙伴，之前我方发过一次口碑曝光贴不光没有解决问题，还受到对方不知名的领导威胁，说要把我方的个人信息（身份证）发布到网络上去，因为之前他们一直不予协商，找各种借口和理由推脱，先说是我在口碑曝光贴的投诉影响他们了什么的各种原因，因为口碑曝光贴被多方转载了，这是我方不可控的范围，结果拇指帮就开始耍无赖，非要求我们去把别人...',
+             '揭露拇指帮装修网的骗局': '还算满意，希望商家遵守自己的承诺，避免后期在有任何矛盾产生，尽快把和解协议签字，在规定时间内把钱退给我',
+             '签了合同之后就完全不安合同内容实行！': '本公司是杭州成勤环保科技有限公司与郑州中万软件科技有限公司（拇指帮装修网）在2017年11月16日签订合同，费用是15000元，参将双十一活动减2111元，赠送35个订单。本公司是做室内空气净化、除甲醛的，签合同之前，明确说过，派送订单要有明确需求的客户订单。合作开始之后，客服派送的订单全部是装修订单，与本公司业务不符合，与合同内容不符合...'},
+ 'memid': 25460202,
+ 'memname': '拇指帮装修网'}
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=2)
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2416472&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3573365&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2258651&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2865754&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1221417&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26061751&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2865648&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2501714&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2416472&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '苏州汇装网络信息技术有限公司', 'memid': 2416472, 'memname': '装修我家'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3573365&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '宿迁企动力网络科技有限公司', 'memid': 3573365, 'memname': '比三家装修网'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2258651&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海灵朵信息科技有限公司', 'memid': 2258651, 'memname': '窝牛装修'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2865754&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳过家家科技有限公司', 'memid': 2865754, 'memname': '过家家装修网'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1221417&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '武汉欧氏达科技有限公司', 'memid': 1221417, 'memname': '参谋家装修网'}
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26061751&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '天津叮当网科技有限公司', 'memid': 26061751, 'memname': '叮当装修'}
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=195621&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2865648&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京亦风科技有限公司', 'memid': 2865648, 'memname': '3空间找装修'}
+2018-09-03 18:23:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=103899&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2501714&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '郑州多点科技有限公司',
+ 'content': {'合同欺骗，条约不履行！': '省多多装修网就是个骗子公司！我在他们家签了半年合作协议，说承诺让我在他们平台签到50万的单子。结果合作期结束了总共就发了几个客户号码给我，其他没有任何服务。就这几个客户号码还都是无效的都是假的信息！'},
+ 'memid': 2501714,
+ 'memname': '省多多装修网'}
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=195621&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '上海春亭装饰设计工程有限公司', 'memid': 195621, 'memname': '上海别墅装修'}
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=103899&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京古韵轩装饰设计有限公司', 'memid': 103899, 'memname': '古韵轩中式装修网'}
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=3)
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=251027&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3668940&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3666818&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=27325965&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=275230&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=27718410&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3712310&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1183444&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=251027&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '厦门美家帮科技股份有限公司', 'memid': 251027, 'memname': 'X团装修网'}
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2111792&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=848004&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3668940&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳前海熊猫无毒装修网络科技有限公司', 'memid': 3668940, 'memname': '熊猫无毒装修网'}
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3666818&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '易居(北京)电子商务股份有限公司', 'memid': 3666818, 'memname': '苏皖e装修'}
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=27325965&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '宝鸡爱蜂巢电子商务有限公司', 'memid': 27325965, 'memname': '装修e站'}
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=275230&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '四川弘讯电子商务有限公司', 'memid': 275230, 'memname': '装修一二三网'}
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=27718410&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '常州虎跃网络科技有限公司', 'memid': 27718410, 'memname': '喜乐虎装修网'}
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3712310&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '好家(厦门)网络科技有限公司', 'memid': 3712310, 'memname': '好家装修网'}
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1183444&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '铜陵市人人网络科技有限公司', 'memid': 1183444, 'memname': '人人装修网'}
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2111792&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '桐庐兴润网络工程经营部', 'memid': 2111792, 'memname': '桐庐装饰网'}
+2018-09-03 18:23:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=848004&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '沈阳林凤伟业装饰装修工程有限公司', 'memid': 848004, 'memname': '沈阳林凤伟业装饰装修工程有限公司'}
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=4)
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=32016357&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26061399&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=29908530&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=32693702&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2258787&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2961379&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:23:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=32016357&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '武汉璇瑞智佳装饰装修设计工程有限公司',
+ 'memid': 32016357,
+ 'memname': '武汉璇瑞智佳装饰装修设计工程有限公司'}
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=34703719&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3480429&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3670284&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:23:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26061399&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '贵州楚风建设工程有限公司', 'memid': 26061399, 'memname': '楚风装修网'}
+2018-09-03 18:23:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=29908530&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '武汉师傅之家装饰服务有限公司', 'memid': 29908530, 'memname': '装修帮工长'}
+2018-09-03 18:23:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=32693702&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '厦门柒陆伍实业有限公司', 'memid': 32693702, 'memname': '765装修网'}
+2018-09-03 18:23:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2258787&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '合肥日鸿装修设计工程有限公司',
+ 'content': {'合肥日鸿装修公司是豆腐渣工程': '我家装修找日鸿公司，真是倒了大霉，合同延期了一个多月是小事，刚装修好的房子，墙根50公分就出现大面积的长了白霉，紧接着白霉变成黑霉，墙体脱落。让他们公司来维修，电话里说好修过了，等你人去的时候，要么根本没修，要么只是在墙脱了的地方，涂一些腻子粉，就这样折腾我们几次（因为我们离得远，去一趟非常不容易，拖家带口的）最后来找他们修，他们连电话也...'},
+ 'memid': 2258787,
+ 'memname': '日鸿装修'}
+2018-09-03 18:23:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2961379&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '沈阳海天装饰装修有限公司', 'memid': 2961379, 'memname': '沈阳海天装饰装修有限公司'}
+2018-09-03 18:23:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=2604784&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:23:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=34703719&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '杭州爱装修网络科技有限公司', 'memid': 34703719, 'memname': '杭州爱装修网络科技有限公司'}
+2018-09-03 18:23:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3480429&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '常州市谷歌网络科技有限公司', 'memid': 3480429, 'memname': '常州装修网'}
+2018-09-03 18:23:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3670284&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '深圳一修网络科技有限公司', 'memid': 3670284, 'memname': 'e修装修'}
+2018-09-03 18:23:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=2604784&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '苏州雅信装饰工程有限公司', 'memid': 2604784, 'memname': '上海装修'}
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=5)
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=36732165&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=3359360&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=1232814&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=188595&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=33512&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=25932712&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=196646&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26005047&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=36732165&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '广州市合抱木信息科技有限责任公司', 'memid': 36732165, 'memname': '合抱木互联网装修平台'}
+2018-09-03 18:24:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=3359360&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '厦门蜜蜂巢科技有限公司', 'memid': 3359360, 'memname': '蜜蜂巢装修网'}
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=36884998&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=1232814&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '四川弘讯电子商务有限公司',
+ 'content': {'和他们做了一个业务，上当受骗了，求助！！': '给他们做cs.zx123.cn/ '
+                                     '长沙装修这一个词的优化，一个月付款500，做到了百度首页不给钱！有他们工作人员qq： '
+                                     '2460300871号，打电话咨询了，答应的很好不做人事，至今都没有付款！'},
+ 'memid': 1232814,
+ 'memname': '装修123网'}
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/s/gettruthlistajax?memid=39305435&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=188595&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '北京三木合力建筑装饰工程有限公司', 'memid': 188595, 'memname': '声学装修'}
+2018-09-03 18:24:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=33512&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '邢台市木枫信息技术服务有限公司', 'memid': 33512, 'memname': '77装修网'}
+2018-09-03 18:24:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=25932712&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '广州市尤度装修设计有限公司', 'memid': 25932712, 'memname': '广州市尤度装修设计有限公司'}
+2018-09-03 18:24:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=196646&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '沈阳瑞家装饰装修工程有限公司', 'memid': 196646, 'memname': '沈阳瑞家装饰装修工程有限公司'}
+2018-09-03 18:24:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=26005047&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '合肥日鸿装修设计工程有限公司', 'memid': 26005047, 'memname': '合肥日鸿装修设计工程有限公司'}
+2018-09-03 18:24:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=36884998&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '西安兔宝贝信息科技有限公司', 'memid': 36884998, 'memname': '兔宝贝装修网'}
+2018-09-03 18:24:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://koubei.baidu.com/s/gettruthlistajax?memid=39305435&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266>
+{'compname': '西安美家帮建筑设计有限公司', 'memid': 39305435, 'memname': '美家帮互联网装修'}
+2018-09-03 18:24:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=7> (referer: https://koubei.baidu.com/search/getsearchresultajax?wd=%25E8%25A3%2585%25E4%25BF%25AE&page=6)
+2018-09-03 18:24:00 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://koubei.baidu.com/s/gettruthlistajax?memid=26005047&page=1&isself=0&iscomp=0&includeme=0&fr=site_tab_truth&_=1535643188266> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-09-03 18:24:00 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-09-03 18:24:00 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 43409,
+ 'downloader/request_count': 67,
+ 'downloader/request_method_count/GET': 67,
+ 'downloader/response_bytes': 126653,
+ 'downloader/response_count': 67,
+ 'downloader/response_status_count/200': 67,
+ 'dupefilter/filtered': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 9, 3, 10, 24, 0, 936027),
+ 'item_scraped_count': 60,
+ 'log_count/DEBUG': 129,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 7,
+ 'response_received_count': 67,
+ 'scheduler/dequeued': 67,
+ 'scheduler/dequeued/memory': 67,
+ 'scheduler/enqueued': 67,
+ 'scheduler/enqueued/memory': 67,
+ 'start_time': datetime.datetime(2018, 9, 3, 10, 23, 54, 757073)}
+2018-09-03 18:24:00 [scrapy.core.engine] INFO: Spider closed (finished)
